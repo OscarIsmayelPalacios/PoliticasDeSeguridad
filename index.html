@@ -13,6 +13,7 @@
         ul { margin-bottom: 15px; padding-left: 20px; }
         ul li { margin-bottom: 8px; }
         strong { font-weight: bold; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
         .critical { background-color: #f9e9e9; padding: 10px; border-left: 5px solid #e74c3c; margin-top: 15px; }
     </style>
 </head>
@@ -34,7 +35,7 @@
         <p><strong>Account</strong> means a unique account created for You to access our Service.</p>
     </li>
     <li>
-        <p><strong>Application</strong> refers to **Assistive Audio AI**, the software program provided by the Company.</p>
+        <p><strong>Application</strong> refers to <strong>Assistive Audio AI</strong>, the software program provided by the Company.</p>
     </li>
     <li>
         <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Assistive Audio AI.</p>
@@ -100,18 +101,18 @@
 <div class="critical">
     <p><strong>1. Microphone Access (<code>android.permission.RECORD_AUDIO</code>)</strong></p>
     <ul>
-        <li><strong>Primary Use (Alarm Feature):</strong> Audio is captured continuously via a **Foreground Service** to enable **Assistive Audio AI** processing (YAMNet model) on the device. The raw audio is processed instantly and **discarded**; it is never recorded or stored by the Company for this purpose.</li>
-        <li><strong>Secondary Use (On-Demand):</strong> If You explicitly choose to use the **"Start Transcription"** or **"Recognize Music"** features, the audio is temporarily captured and transmitted to third-party providers (Deepgram and AudD) for analysis, solely to fulfill Your request.</li>
+        <li><strong>Primary Use (Alarm Feature):</strong> Audio is captured continuously via a <strong>Foreground Service</strong> to enable <strong>Assistive Audio AI</strong> processing (YAMNet model) on the device. The raw audio is processed instantly and <strong>discarded</strong>; it is never recorded or stored by the Company for this purpose.</li>
+        <li><strong>Secondary Use (On-Demand):</strong> If You explicitly choose to use the <strong>"Start Transcription"</strong> or <strong>"Recognize Music"</strong> features, the audio is temporarily captured and transmitted to third-party providers (Deepgram and AudD) for analysis, solely to fulfill Your request.</li>
     </ul>
 
     <p><strong>2. Display Over Other Apps (<code>android.permission.SYSTEM_ALERT_WINDOW</code>)</strong></p>
     <ul>
-        <li><strong>Purpose:</strong> This permission is used **ONLY** to display the mandatory **Full-Screen Alarm Alert** over the lock screen or other running applications when a critical sound is detected in the background, ensuring You receive the safety notification.</li>
+        <li><strong>Purpose:</strong> This permission is used <strong>ONLY</strong> to display the mandatory <strong>Full-Screen Alarm Alert</strong> over the lock screen or other running applications when a critical sound is detected in the background, ensuring You receive the safety notification.</li>
     </ul>
     
     <p><strong>3. Camera Access (Flashlight)</strong></p>
     <ul>
-        <li><strong>Purpose:</strong> Access to the Camera hardware is used **EXCLUSIVELY** to control the device's **Flashlight** as a visual alarm effect, if configured by You in the Alarm Settings. We do not use this permission to record images or video.</li>
+        <li><strong>Purpose:</strong> Access to the Camera hardware is used <strong>EXCLUSIVELY</strong> to control the device's <strong>Flashlight</strong> as a visual alarm effect, if configured by You in the Alarm Settings. We do not use this permission to record images or video.</li>
     </ul>
 </div>
 
@@ -119,13 +120,13 @@
 <p>We share Your data with the following Third-Party Providers to enable the functionality of the Service:</p>
 <ul>
     <li>
-        <p><strong>Google Firebase (Authentication & Firestore):</strong> Used for Account management, storing User Settings, and storing **Detection History Metadata**.</p>
+        <p><strong>Google Firebase (Authentication & Firestore):</strong> Used for Account management, storing User Settings, and storing <strong>Detection History Metadata</strong>.</p>
     </li>
     <li>
-        <p><strong>Deepgram:</strong> When You activate the **"Start Transcription"** feature, **real-time audio** is streamed to Deepgram for speech-to-text conversion, only for the duration of the transcription session.</p>
+        <p><strong>Deepgram:</strong> When You activate the <strong>"Start Transcription"</strong> feature, <strong>real-time audio</strong> is streamed to Deepgram for speech-to-text conversion, only for the duration of the transcription session.</p>
     </li>
     <li>
-        <p><strong>AudD:</strong> When You activate the **"Recognize Music"** feature, a **short audio sample** is sent to AudD to identify the song.</p>
+        <p><strong>AudD:</strong> When You activate the <strong>"Recognize Music"</strong> feature, a <strong>short audio sample</strong> is sent to AudD to identify the song.</p>
     </li>
 </ul>
 
@@ -133,12 +134,9 @@
 
 <h2>3. Retention and Deletion of Your Personal Data</h2>
 
-<h3>Retention of Your Personal Data</h3>
-<p>The Company will retain Your Personal Data, including your Detection History Metadata, only for as long as is necessary for the purposes set out in this Privacy Policy and to provide the Service.</p>
-
 <h3>Delete Your Personal Data</h3>
-<p>You have the right to delete or request that We assist in deleting the Personal Data and Detection History Metadata that We have collected about You.</p>
-<p>The Service provides You with the ability to delete Your **Detection History** through two methods:</p>
+<p id="delete-personal-data">You have the right to delete or request that We assist in deleting the Personal Data and Detection History Metadata that We have collected about You.</p>
+<p>The Service provides You with the ability to delete Your <strong>Detection History</strong> (partial deletion of data) through two methods:</p>
 <ul>
     <li>
         <p><strong>Manual Deletion:</strong> You can select and delete specific sessions or choose to delete the entire history via the options available on the History screen.</p>
@@ -147,7 +145,8 @@
         <p><strong>Automatic Deletion:</strong> If configured in Settings, sessions older than 30 days will be automatically deleted from the server.</p>
     </li>
 </ul>
-<p>You may also contact Us to request access to, correction, or deletion of any personal information that You have provided to Us.</p>
+<p>You may request the deletion of Your entire account (including all associated Personal Data and history) by contacting Us directly at the email provided below.</p>
+<p>You may also contact Us to request access, correction, or deletion of any personal information that We have provided to Us.</p>
 
 <hr>
 
