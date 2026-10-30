@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Assistive Audio AI</title>
+    <title>Privacy Policy - Asistente Virtual IA</title>
     <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
         h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 20px; }
@@ -15,13 +15,22 @@
         strong { font-weight: bold; }
         hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
         .critical { background-color: #f9e9e9; padding: 10px; border-left: 5px solid #e74c3c; margin-top: 15px; }
+        .identity { background-color: #eef6fc; padding: 10px 15px; border-left: 5px solid #3498db; margin: 15px 0; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: October 15, 2025</strong></p>
-<p>This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and informs You about Your privacy rights and how the law protects You.</p>
+<p><strong>Last updated: October 29, 2026</strong></p>
+
+<div class="identity">
+    <p><strong>App name:</strong> Asistente Virtual IA</p>
+    <p><strong>Developer:</strong> Nova Logic</p>
+    <p><strong>Android package name:</strong> com.miappdesonido</p>
+    <p><strong>Contact:</strong> soporte.asistentevirtualia@gmail.com</p>
+</div>
+
+<p>This Privacy Policy applies to the mobile application <strong>Asistente Virtual IA</strong> (the "Application"), published on Google Play by <strong>Nova Logic</strong>. It describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and informs You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal Data to provide and improve the Service, particularly to deliver critical safety and auditory assistance functions. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
 <hr>
@@ -35,10 +44,10 @@
         <p><strong>Account</strong> means a unique account created for You to access our Service.</p>
     </li>
     <li>
-        <p><strong>Application</strong> refers to <strong>Assistive Audio AI</strong>, the software program provided by the Company.</p>
+        <p><strong>Application</strong> refers to <strong>Asistente Virtual IA</strong>, the software program provided by the Developer.</p>
     </li>
     <li>
-        <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Assistive Audio AI.</p>
+        <p><strong>Developer</strong> (referred to as either "the Developer", "We", "Us" or "Our" in this Policy) refers to <strong>Nova Logic</strong>, the publisher of the Application on Google Play.</p>
     </li>
     <li>
         <p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
@@ -47,7 +56,7 @@
         <p><strong>Service</strong> refers to the Application.</p>
     </li>
     <li>
-        <p><strong>Third-Party Providers</strong> refer to external entities that process data on the Company's behalf or provide essential services (e.g., Deepgram, AudD, Firebase).</p>
+        <p><strong>Third-Party Providers</strong> refer to external entities that process data on Our behalf or provide essential services (Google Firebase, Deepgram, and AudD).</p>
     </li>
     <li>
         <p><strong>Usage Data</strong> refers to data collected automatically (e.g., usage duration, diagnostic data).</p>
@@ -76,6 +85,7 @@
         <p>Firebase User Identifier (UID)</p>
     </li>
 </ul>
+<p>This data is used to create and manage Your Account, authenticate You, and synchronize Your settings and history.</p>
 
 <h4>Detection and History Metadata</h4>
 <p>If You activate the sound detection service and are logged in, We store the following metadata in Your Detection History on Firebase Firestore:</p>
@@ -93,15 +103,15 @@
 <p><strong>Crucially, for the passive sound detection feature, We DO NOT record or store the raw audio data on Our servers.</strong></p>
 
 <h4>Usage Data</h4>
-<p>Usage Data is collected automatically and may include Your device's IP address, device type, mobile operating system, and other diagnostic data.</p>
+<p>Usage Data is collected automatically and may include Your device's IP address, device type, mobile operating system, and other diagnostic data. It is used to operate, maintain, and improve the Service.</p>
 
 <h3>B. Use of High-Risk Permissions (Compliance with Google Play)</h3>
-<p>Our Application requires the following sensitive permissions to deliver its core assistive functions. The use of these permissions is strictly limited and requires Your explicit consent upon first use.</p>
+<p>Our Application requires the following sensitive permissions to deliver its core assistive functions. The use of these permissions is strictly limited and requires Your explicit consent upon first use, through a prominent in-app disclosure.</p>
 
 <div class="critical">
     <p><strong>1. Microphone Access (<code>android.permission.RECORD_AUDIO</code>)</strong></p>
     <ul>
-        <li><strong>Primary Use (Alarm Feature):</strong> Audio is captured continuously via a <strong>Foreground Service</strong> to enable <strong>Assistive Audio AI</strong> processing (YAMNet model) on the device. The raw audio is processed instantly and <strong>discarded</strong>; it is never recorded or stored by the Company for this purpose.</li>
+        <li><strong>Primary Use (Alarm Feature):</strong> Audio is captured continuously via a <strong>Foreground Service</strong> (which displays a persistent notification while active, including when the app is in the background) to enable <strong>Asistente Virtual IA</strong> processing (YAMNet model) on the device. The raw audio is processed instantly on the device and <strong>discarded</strong>; it is never recorded or stored by the Developer for this purpose.</li>
         <li><strong>Secondary Use (On-Demand):</strong> If You explicitly choose to use the <strong>"Start Transcription"</strong> or <strong>"Recognize Music"</strong> features, the audio is temporarily captured and transmitted to third-party providers (Deepgram and AudD) for analysis, solely to fulfill Your request.</li>
     </ul>
 
@@ -109,7 +119,7 @@
     <ul>
         <li><strong>Purpose:</strong> This permission is used <strong>ONLY</strong> to display the mandatory <strong>Full-Screen Alarm Alert</strong> over the lock screen or other running applications when a critical sound is detected in the background, ensuring You receive the safety notification.</li>
     </ul>
-    
+
     <p><strong>3. Camera Access (Flashlight)</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Access to the Camera hardware is used <strong>EXCLUSIVELY</strong> to control the device's <strong>Flashlight</strong> as a visual alarm effect, if configured by You in the Alarm Settings. We do not use this permission to record images or video.</li>
@@ -117,10 +127,10 @@
 </div>
 
 <h3>C. Sharing of Your Personal Data with Third-Party Providers</h3>
-<p>We share Your data with the following Third-Party Providers to enable the functionality of the Service:</p>
+<p>We share Your data with the following Third-Party Providers only to enable the functionality of the Service:</p>
 <ul>
     <li>
-        <p><strong>Google Firebase (Authentication & Firestore):</strong> Used for Account management, storing User Settings, and storing <strong>Detection History Metadata</strong>.</p>
+        <p><strong>Google Firebase (Authentication &amp; Firestore):</strong> Used for Account management, storing User Settings, and storing <strong>Detection History Metadata</strong>. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy Information</a>.</p>
     </li>
     <li>
         <p><strong>Deepgram:</strong> When You activate the <strong>"Start Transcription"</strong> feature, <strong>real-time audio</strong> is streamed to Deepgram for speech-to-text conversion, only for the duration of the transcription session.</p>
@@ -129,10 +139,19 @@
         <p><strong>AudD:</strong> When You activate the <strong>"Recognize Music"</strong> feature, a <strong>short audio sample</strong> is sent to AudD to identify the song.</p>
     </li>
 </ul>
+<p>These providers process data under their own privacy policies and terms. <strong>We do not sell Your Personal Data</strong>, and We do not share it with third parties for advertising purposes. We may disclose data if required by law or to protect the rights, safety, or security of users or the Service.</p>
 
 <hr>
 
-<h2>3. Retention and Deletion of Your Personal Data</h2>
+<h2>3. Data Security</h2>
+<p>We use reasonable technical and organizational measures to protect Your Personal Data, including encrypted transmission (HTTPS/TLS) when data is sent between the Application and Our providers, authentication through Firebase, and access rules on Firestore so that Detection History is only accessible to the Account that created it. No method of transmission or storage is 100% secure, and We cannot guarantee absolute security.</p>
+
+<hr>
+
+<h2>4. Retention and Deletion of Your Personal Data</h2>
+
+<h3>Data Retention</h3>
+<p>We retain Your Account data and Detection History Metadata for as long as Your Account is active, or until You delete them as described below. Raw audio is not retained by Us.</p>
 
 <h3>Delete Your Personal Data</h3>
 <p id="delete-personal-data">You have the right to delete or request that We assist in deleting the Personal Data and Detection History Metadata that We have collected about You.</p>
@@ -145,18 +164,25 @@
         <p><strong>Automatic Deletion:</strong> If configured in Settings, sessions older than 30 days will be automatically deleted from the server.</p>
     </li>
 </ul>
-<p>You may request the deletion of Your entire account (including all associated Personal Data and history) by contacting Us directly at the email provided below.</p>
-<p>You may also contact Us to request access, correction, or deletion of any personal information that We have provided to Us.</p>
+
+<h3>Delete Your Account</h3>
+<p>You may request the deletion of Your entire account (including all associated Personal Data and Detection History) at any time, without needing to reinstall the app, by sending an email to <strong>soporte.asistentevirtualia@gmail.com</strong> from the email address associated with Your Account, with the subject <strong>"Delete my account - Asistente Virtual IA"</strong>. We will process the request and delete Your data within a reasonable period, generally within 30 days, unless We are legally required to retain certain information.</p>
+<p>You may also contact Us to request access to or correction of any Personal Data We hold about You.</p>
 
 <hr>
 
-<h2>4. Children's Privacy and Contact</h2>
+<h2>5. Children's Privacy</h2>
+<p>Our Service is not directed to anyone under the age of 13 and does not address anyone under that age. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and believe Your child has provided Us with Personal Data, please contact Us so We can delete it.</p>
 
-<h3>Children's Privacy</h3>
-<p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.</p>
+<hr>
 
-<h3>Contact Us</h3>
-<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+<h2>6. Changes to this Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will post the new version on this page and update the "Last updated" date at the top. We recommend reviewing this page periodically.</p>
+
+<hr>
+
+<h2>7. Contact Us</h2>
+<p>For any questions about this Privacy Policy, or to exercise Your privacy rights, You can contact the privacy point of contact for <strong>Asistente Virtual IA</strong> (published by <strong>Nova Logic</strong>):</p>
 <ul>
     <li>By email: soporte.asistentevirtualia@gmail.com</li>
 </ul>
